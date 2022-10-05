@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Neto Dantas">
+    <meta name="description" content="Softex">
+    <meta name="keywords" content="Front-End, Html, Softex, Webdesigner">
+    <title>Lugares Turísticos no Mundo</title>
+    <style>
+        body{
+            background-color: rgb(62, 2, 2);
+        }
+        section.img{
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-top: 8px;
+            text-align: center;
+        }
+        section.img:hover{
+            border: 10px solid #299713;
+    
+            
+        }
+        #title{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+        .nameimg{
+            color: white;
+            font-style: italic;
+            font-size: 20px;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            border-radius: 5px;
+            box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+            padding: 30px;
+            margin: 20px;
+            width: 400px;
+            transition: all 0.3s ease-out;
+        }
+        .card:hover {
+            transform: translateY(-15px);
+            cursor: pointer;
+        }
+ 
+        .card p {
+            color: #a3a5ae;
+            font-size: 16px;
+        }
+ 
+        .image {
+            float: right;
+            max-width: 64px;
+            max-height: 64px;
+        }
+        .blue {
+            border-left: 3px solid #4895ff;
+        }
+        
+        .green {
+            border-left: 3px solid #3bb54a;
+        }
+        
+        .red {
+            border-left: 3px solid #b3404a;
+        }
+        .green2{
+            border-left: 3px solid #02ff1b;
+        }
+        .country{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Lugares Turísticos na Europa</h1>
+    <div class="row">
+    <section class="img">
+        <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-havana-capa2019-04.jpg" alt="Cuba" width="300" height="200">
+        <p class="nameimg">Havana - Cuba</p>
+    </section>
+    <section class="img">
+        <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-veneza-capa2019-02.jpg" alt="Italia" width="300" height="200">
+        <p class="nameimg">Veneza - Itália</p>
+    </section>
+    <section class="img">
+        <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2021/10/santiago-chile-capa-02.jpg" alt="Praias Cubanas" width="300" height="200">
+        <p class="nameimg">Santigo - Chile</p>
+    </section>
+    <section class="img">
+        <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-havana-capa2019-04.jpg" alt="Cuba Livre" width="300" height="200">
+        <p class="nameimg">Varadero - Cuba</p>
+    </section>
+    </div>
+
+    <div class="row">
+
+        <div class="card green">
+          <h2 class="country">Europa</h2>
+          <p>Frio</p>
+          <img class="image" src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-havana-capa2019-04.jpg" alt="us" />
+        </div>
+   
+        <div class="card blue">
+          <h2 class="country">América</h2>
+          <p>Quente</p>
+          <img class="image" src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-havana-capa2019-04.jpg" alt="cu" />
+        </div>
+   
+        <div class="card red">
+          <h2 class="country">Ásia</h2>
+          <p>Tecnológica</p>
+          <img class="image" src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-havana-capa2019-04.jpg" alt="ge" />
+        </div>
+
+        <div class="card green2">
+            <h2 class="country">Oceania</h2>
+            <p>Distante</p>
+            <img class="image" src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-havana-capa2019-04.jpg" alt="ge" />
+          </div>
+      </div>
+      <marquee><font size=48 color=yellow>Libertix Desenvolvimento</font></marquee>
+</body>
+</html>
